@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Student {
 	
+<<<<<<< HEAD
 	Leptop leptop;
 	
 	void study() {
@@ -22,3 +23,26 @@ public class Student {
 	}
 	 
 }
+=======
+	
+	Leptop leptop;
+	
+	void display() {
+		System.out.println("Student is studing");
+	}
+	
+	
+	void leptopDisplay() {
+		leptop.work();
+	}
+	
+	@Autowired
+	public Student(Leptop leptop) {
+		this.leptop = leptop;
+	}
+	
+	
+	
+	
+} 
+>>>>>>> 290c53d4da7e8e54e5e3a70e8a0a484c62aabf27
